@@ -1,5 +1,5 @@
 import React from 'react'
-
-export default () => {
-  return <button>button</button>
+import { Button } from 'antd'
+export default ({ type }: { type: "link" | "text" | "ghost" | "default" | "primary" | "dashed" | undefined }) => {
+  return <Button type={type}>button</Button>
 }

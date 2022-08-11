@@ -14,8 +14,18 @@ Demo:
 ```tsx
 import React from 'react';
 import { Bar } from 'jing-ui';
-
-export default () => <Bar />;
+import { Space, ConfigProvider } from 'antd'; 
+export default () => {
+  return <>
+    <ConfigProvider prefixCls="jing-ui">
+      <Space>
+        <Bar type="primary"/>
+        <Bar type="dashed"/>
+        <Bar/>
+      </Space>
+    </ConfigProvider>
+  </>
+};
 ```
 
-More skills for writing demo: https://d.umijs.org/guide/basic#write-component-demo
+More skills for writing demo: <https://d.umijs.org/guide/basic#write-component-demo>

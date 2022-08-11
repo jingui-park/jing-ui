@@ -1,0 +1,266 @@
+// 覆盖antd基础组件变量，符合组件库风格
+@import '~antd/lib/style/themes/default.less';
+
+@theme: jing-ui;
+
+@ant-prefix: @theme;
+@prefix: @theme;
+
+// --------Base Colors -----------
+
+// 品牌色
+@color-cs: #ed6f4d; // jingui CloudSuie 品牌色
+@color-os: #35bfd8; // jinguiOS 品牌色
+
+// 白色、黑色
+@white: #fff;
+@black: #000;
+
+// 边框颜色
+@border: @color-n2;
+
+// 辅助色
+@color-s1: #0091ae;
+@color-s2: #5e6ab8;
+@color-s3: #38a59b;
+@color-s4: #a6c682;
+@color-s5: #e7bd2f;
+
+// 文案颜色
+@color-t1: #33475b;
+@color-t2: #516f90;
+@color-t3: #7c98b6;
+@color-t4: #b0c1d4;
+
+// 中性色
+@color-n1: #99acc2;
+@color-n2: #cbd6e2;
+@color-n3: #dfe3eb;
+@color-n4: #e7ebf3;
+@color-n5: #f5f8fa;
+
+// 文字
+@heading-color-dark: @color-t1;
+@heading-color: @color-t1;
+@text-color: @color-t1;
+@text-color-secondary: @color-t2;
+
+// 主色
+@primary-color: #4c8cca;
+@primary-color-hover: @color-t2;
+@primary-cs-color: @color-cs;
+@primary-os-color: @color-os;
+
+// 状态色
+@info-color: @primary-color;
+@success-color: #5ab55e;
+@warning-color: #f0a332;
+@error-color: #eb5f5c;
+@normal-color: @color-t1;
+
+// 背景色
+@body-background: @white;
+@component-background: @white;
+@layout-footer-background: @white;
+@layout-header-background: @color-t1;
+@layout-body-background: @white;
+
+// 边框色
+@border-color-base: @color-n2;
+@border-radius-base: 3px;
+
+// 文字颜色
+@link-color: @primary-color;
+@link-color-hover: @primary-color-hover;
+@disabled-color: @color-t4;
+@disabled-bg: #eaf0f6;
+
+// 进度条
+@processing-color: @primary-color;
+
+// 图标色
+@icon-color: @primary-color;
+
+// --------Base Components -----------
+// 基础距离
+@base-space: 8px;
+// 圆角大小
+@border-radius: 3px;
+
+// Checkbox
+// ---
+@checkbox-size: 14px;
+@checkbox-color: @primary-color;
+@checkbox-check-color: @white;
+@checkbox-check-bg: @checkbox-check-color;
+@checkbox-border-width: @border-width-base;
+@checkbox-group-item-margin-right: 8px;
+
+// Radio
+@radio-size: 12px;
+
+// Modal
+@modal-form-header-background: #f5f8fa;
+
+@modal-info-background: #e6f1fd;
+@modal-info-icon: #a5c5e4;
+
+@modal-danger-background: #fce3e2;
+@modal-danger-icon: #eb5f5c;
+
+@modal-warning-background: #fceeda;
+@modal-warning-icon: #f0a332;
+// ---
+
+// Switch
+// ---
+@switch-color: @white;
+@switch-bg: @color-n5;
+@switch-border-color: @color-n2;
+@switch-disabled-bg: @disabled-bg;
+@switch-pin-disabled-bg: @color-n2;
+@switch-pin-disabled-icon-color: @color-t4;
+@switch-check-color: @primary-color;
+@switch-check-box-shadow-color: lighten(@primary-color, 35%);
+@switch-small-pin-size: 16px;
+@switch-width: 29px;
+@switch-large-pin-size: 24px;
+@switch-large-width: 46px;
+@switch-large-height: 22px;
+
+// Input
+// ---
+@input-focused-color: @primary-color;
+@input-hover-color: @primary-color;
+@input-search-button-color: @primary-color;
+@input-search-icon-color: @primary-color;
+@input-icon-color: @text-color;
+@input-focus-shadow-color: rgba(76, 140, 202, 0.5);
+@input-search-icon-size: 12px;
+@input-border: lighten(@black, 85%);
+@input-bg: @white;
+@input-placeholder-color: @color-t4;
+
+// input disabled
+@input-disable-color: fade(@black, 25%);
+@input-disable-border: @border;
+@input-disable-bg: darken(@white, 4%);
+
+// Select
+@select-dropdown-border-color: @color-n2;
+@select-dropdown-shadow-color: fade(@color-t1, 15%);
+@select-dropdown-radius: 0 0 3px 3px;
+@select-item-selected-color: @text-color;
+@select-item-selected-font-weight: normal;
+@select-item-selected-bg: #e6f1fd;
+@select-item-active-bg: @select-item-selected-bg;
+@select-multiple-item-icon-color: @color-n1;
+@select-font-size: 12px;
+// Button
+@btn-default: @color-cs;
+@btn-default-hover-bg: #fef5f2;
+@btn-default-focus-bg: #fdeae5;
+@btn-primary: @white;
+@btn-primary-hover-bg: #f08366;
+@btn-primary-focus-bg: #dc6747;
+@btn-jing-ui-default: @color-os;
+@btn-jjing-ui-default-hover: #f3fbfd;
+@btn-jjing-ui-default-focus: #eaf8fb;
+@btn-jjing-ui-primary-hover: #59cadf;
+@btn-jjing-ui-primary-focus: #30adc4;
+@btn-normal: @primary-color;
+@btn-normal-hover-bg: #6199d0;
+@btn-normal-focus-bg: #447db5;
+@btn-operate: #506e91;
+@btn-operate-hover-bg: @color-n5;
+@btn-operate-focus-bg: @color-n2;
+@btn-operate-focus-border: @color-t3;
+@btn-message: #e6f1fd;
+@btn-message-border: #b6d9fb;
+@btn-success: #f2f9f3;
+@btn-success-border: #cde8ce;
+@btn-success-hover-bg: @success-color;
+@btn-warning: #fef8ef;
+@btn-warning-border: #f3deba;
+@btn-warning-hover-border: @warning-color;
+@btn-error: #fef3f2;
+@btn-error-border: #f9cfce;
+@btn-error-hover-border: @error-color;
+@btn-height-lg: 40px;
+@btn-height-ml: 32px;
+@btn-height-ml-s: 28px;
+@btn-height-sm: 24px;
+@btn-height-sm-s: 20px;
+@btn-font-size-lg: 14px;
+@btn-font-size-base: 12px;
+@btn-padding-base: 16px;
+@btn-padding-sm: 12px;
+
+// Collapse
+@collapse-bg-color-white: @white;
+@collapse-border-color: @color-n3;
+@collapse-bg-color: @color-n5;
+@collapse-arrow-color: @color-t2;
+@collapse-disabled-color: @disabled-color;
+@collapse-log-bg-color: #f2f9f3;
+@collapse-log-border-color: @color-n3;
+
+// Card
+@card-overview-border-color: @color-n2;
+@card-overview-bg-color: @color-n4;
+@card-overview-txt-color: @color-t1;
+
+// Tabs
+@tabs-txt-color: @color-t2;
+@tabs-txt-hover-color: @color-t3;
+@tabs-disabled-color: @disabled-color;
+@tabs-border-color: @color-n2;
+@tabs-color: @color-t1;
+@tabs-tab-bg-color: @color-n5;
+@tabs-card-bg-color: @white;
+@tabs-custom-border-color: @color-n3;
+
+// Message
+@message-border-color: @color-n2;
+@message-box-shadow-color: rgba(51, 71, 91, 0.2);
+@message-btn-color: @primary-color;
+@message-txt-color: @color-t1;
+@message-info-bg-color: #e6f1fd;
+@message-info-border-color: #b6d9fb;
+@message-success-bg-color: #f2f9f3;
+@message-success-border-color: #cde8ce;
+@message-error-bg-color: #fef3f2;
+@message-error-border-color: #f9cfce;
+@message-warning-bg-color: #fef8ef;
+@message-warning-border-color: #f3deba;
+
+// Alert
+@alert-info-border-color: @btn-message-border;
+@alert-info-bg-color: @btn-message;
+@alert-info-icon-color: @info-color;
+@alert-text-border-color: #eeeeee;
+@alert-text-bg-color: #fafafa;
+@alert-text-icon-color: #506e91;
+@alert-success-border-color: @btn-success-border;
+@alert-success-bg-color: @btn-success;
+@alert-success-icon-color: @success-color;
+@alert-warning-border-color: @btn-warning-border;
+@alert-warning-bg-color: @btn-warning;
+@alert-warning-icon-color: @warning-color;
+@alert-error-border-color: @btn-error-border;
+@alert-error-bg-color: @btn-error;
+@alert-error-icon-color: @error-color;
+@alert-close-color: @color-n1;
+@alert-close-hover-color: @color-t3;
+@alert-with-description-no-icon-padding-vertical: 8px;
+@alert-with-description-padding: 8px 16px;
+
+// Progress
+@progress-remaining-color: @color-n4;
+@progress-radius: 3px;
+
+// InputNumber 数字输入框
+@input-number-width: @base-space * 16;
+
+// DropDown
+@dropdown-font-size: 12px;
